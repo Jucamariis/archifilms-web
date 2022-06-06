@@ -5,7 +5,15 @@ html, body {
 }
 
 /* Header + Navbar */
+header {
+  min-height: 100vh;
+}
+
 nav {
+  z-index: 100;
+  width: 97.8%;
+  background: white;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +27,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 nav img {
@@ -47,6 +55,7 @@ nav div {
 
 nav div a {
   text-decoration: none;
+  font-weight: 700;
   padding: .8rem 1.5rem;
   color: black;
 }
@@ -62,5 +71,105 @@ nav div a.last-nav-item {
 nav div a.last-nav-item:hover {
   background: black;
   color: white;
+}
+
+#hero {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5rem;
+}
+
+.header-intro p {
+  font-weight: 500;
+}
+
+.header-intro h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header-intro h4 {
+  width: 40rem;
+}
+
+.header-intro a {
+  text-decoration: none;
+  font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  padding: .8rem 2rem;
+  border: .2rem solid black;
+  border-radius: 15px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.header-intro a:hover {
+  background: black;
+  color: white;
+}
+
+.hero-image img {
+  width: 500px;
+  border-radius: 20px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.hero-image img:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(-0.5rem) translateY(-0.5rem) scale(1.05);
+          transform: translateX(-0.5rem) translateY(-0.5rem) scale(1.05);
+}
+
+/* Section: About Us */
+#about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3rem;
+}
+
+#about-us h3 {
+  margin-left: 6rem;
+  font-size: 2rem;
+}
+
+#about-us div {
+  padding-top: 8rem;
+}
+
+#about-us div.our-pictures img {
+  width: 350px;
 }
 /*# sourceMappingURL=home.css.map */

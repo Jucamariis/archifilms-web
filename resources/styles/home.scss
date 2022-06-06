@@ -6,12 +6,20 @@ html, body {
 
 /* Header + Navbar */
 
+header {
+    min-height: 100vh;
+}
+
 nav {
+    z-index: 100;
+    width: 97.8%;
+    background: white;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
+    padding: 1rem;
 
     img {
         width: 45px;
@@ -28,6 +36,7 @@ nav {
 
         a {
             text-decoration: none;
+            font-weight: 700;
             padding: .8rem 1.5rem;
             color: black;
 
@@ -41,6 +50,90 @@ nav {
                     background: black;
                     color: white;
                 }
+            }
+        }
+    }
+}
+
+#hero {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-intro {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 5rem;
+
+    p {
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    h4 {
+        width: 40rem;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        width: fit-content;
+        color: black;
+        padding: .8rem 2rem;
+        border: .2rem solid black;
+        border-radius: 15px;
+        transition-duration: .3s;
+
+        &:hover {
+            background: black;
+            color: white;
+        }
+    }
+}
+
+.hero-image {
+    img {
+        width: 500px;
+        border-radius: 20px;
+        transition-duration: .3s;
+
+        &:hover {
+            cursor: pointer;
+            transform: translateX(-.5rem) translateY(-.5rem) scale(1.05);
+        }
+    }
+}
+
+/* Section: About Us */
+
+#about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+
+    h3 {
+        margin-left: 6rem;
+        font-size: 2rem;
+    }
+
+    div {
+        padding-top: 8rem;
+
+        &.our-values {
+
+        }
+
+        &.our-pictures {
+            img {
+                width: 350px;
             }
         }
     }
