@@ -1,0 +1,66 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header + Navbar */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+nav img {
+  width: 45px;
+  height: 45px;
+  margin-left: 1rem;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+}
+
+nav div a {
+  text-decoration: none;
+  padding: .8rem 1.5rem;
+  color: black;
+}
+
+nav div a.last-nav-item {
+  border: 0.2rem solid black;
+  border-radius: 15px;
+  margin-left: 1rem;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+nav div a.last-nav-item:hover {
+  background: black;
+  color: white;
+}
+/*# sourceMappingURL=home.css.map */
