@@ -2,6 +2,9 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  color: #070816;
+  scroll-behavior: smooth;
+  /* Smooth Scrolling */
 }
 
 /* Header + Navbar */
@@ -57,11 +60,11 @@ nav div a {
   text-decoration: none;
   font-weight: 700;
   padding: .8rem 1.5rem;
-  color: black;
+  color: #070816;
 }
 
 nav div a.last-nav-item {
-  border: 0.2rem solid black;
+  border: 0.2rem solid #070816;
   border-radius: 15px;
   margin-left: 1rem;
   -webkit-transition-duration: .3s;
@@ -69,7 +72,7 @@ nav div a.last-nav-item {
 }
 
 nav div a.last-nav-item:hover {
-  background: black;
+  background: #070816;
   color: white;
 }
 
@@ -120,16 +123,16 @@ nav div a.last-nav-item:hover {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: black;
+  color: #070816;
   padding: .8rem 2rem;
-  border: .2rem solid black;
+  border: .2rem solid #070816;
   border-radius: 15px;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
 }
 
 .header-intro a:hover {
-  background: black;
+  background: #070816;
   color: white;
 }
 
@@ -151,13 +154,55 @@ nav div a.last-nav-item:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 3rem 0;
+}
+
+#about-us div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about-us div div {
+  margin: 0rem 4rem;
+  padding-top: 5rem;
+}
+
+#about-us div div.our-values {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about-us div div.our-values h4 {
+  font-size: 2rem;
+  margin: .2rem;
+}
+
+#about-us div div.our-values p {
+  margin: 2rem 0rem;
+}
+
+#about-us div div.our-pictures img {
+  width: 350px;
 }
 
 #about-us h3 {
@@ -165,11 +210,229 @@ nav div a.last-nav-item:hover {
   font-size: 2rem;
 }
 
-#about-us div {
-  padding-top: 8rem;
+/* Section: Works */
+#works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 3rem 0;
 }
 
-#about-us div.our-pictures img {
+#works div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#works div div {
+  margin: 0rem 4rem;
+  padding-top: 5rem;
+}
+
+#works div div.our-values {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#works div div.our-values h5 {
+  font-size: 1.5rem;
+  margin: .2rem;
+}
+
+#works div div.our-values p {
+  margin: 2rem 0rem;
+}
+
+#works div div.our-pictures img {
   width: 350px;
+}
+
+#works h3 {
+  margin-left: 6rem;
+  font-size: 2rem;
+}
+
+/* Section: AGN */
+#agn-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 3rem 0;
+}
+
+#agn-section p {
+  padding: 2rem 0;
+  text-align: center;
+  width: 35vw;
+  margin: auto;
+}
+
+#agn-section h3 {
+  margin-left: 6rem;
+  font-size: 2rem;
+}
+
+/* Section: Contact Us */
+#contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem 0 5rem 0;
+}
+
+#contact-us div {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact-us div div {
+  margin: 0rem 4rem;
+  padding-top: 1rem;
+}
+
+#contact-us div div.communication-sources {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact-us div div.communication-sources h4 {
+  font-size: 1.5rem;
+  margin: .2rem;
+}
+
+#contact-us div div.communication-sources p {
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+#contact-us div div.communication-sources div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35vw;
+}
+
+#contact-us div div.communication-sources div a {
+  margin: 0rem 1rem;
+  text-decoration: none;
+  color: #070816;
+  padding: 1rem 2rem;
+  background: #e94a47;
+  border: .3rem solid #e94a47;
+  border-radius: 15px;
+  color: white;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+#contact-us div div.communication-sources div a:hover {
+  -webkit-animation: friendly-hover .4s linear 1;
+          animation: friendly-hover .4s linear 1;
+  color: #e94a47;
+  background: white;
+}
+
+#contact-us div div.top-picture img {
+  width: 200px;
+}
+
+#contact-us h3 {
+  margin-left: 6rem;
+  font-size: 2rem;
+}
+
+/* Animations */
+@-webkit-keyframes friendly-hover {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  35% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  75% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes friendly-hover {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  35% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  75% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 /*# sourceMappingURL=home.css.map */
