@@ -193,7 +193,7 @@ nav div a.last-nav-item:hover {
 }
 
 #about-us div div.our-values h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: .2rem;
 }
 
@@ -256,6 +256,7 @@ nav div a.last-nav-item:hover {
 #works div div.our-values h5 {
   font-size: 1.5rem;
   margin: .2rem;
+  font-weight: 500;
 }
 
 #works div div.our-values p {
